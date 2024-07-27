@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div id="home" class="page active">
+        <h1>Home Page</h1>
+        <p>Welcome to the home page!</p>
+    </div>
+    <div id="about" class="page">
+        <h1>About Page</h1>
+        <p>Learn more about us on this page.</p>
+    </div>
+    <div id="contact" class="page">
+        <h1>Contact Page</h1>
+        <p>Contact us through this page.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').click(function(e) {
+                e.preventDefault();
+                var targetPage = $(this).attr('href').substring(1);
+
+                $('.page').removeClass('active');
+                $('#' + targetPage).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

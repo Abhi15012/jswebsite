@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#10084; Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="headpage">
+      <div id="#popUp" class="visible">
+        <div class="formContainer">
+          <form
+            action="https://getform.io/f/agdydgqb"
+            method="post"
+            class="form12"
+          >
+            <div class="headForm">
+              <h2>Talk to us</h2>
+              <span class="closebut"><img src="x-lg.svg" alt="" /></span>
+            </div>
+            <div class="form-fill">
+              <input type="email" name="email" id="email" required />
+
+              <label for="email" name="work email" id="workemail" class="fill"
+                >work email*</label
+              >
+            </div>
+            <div class="details">
+              <input type="text" name="firstname" id="formName" required />
+
+              <label for="formName" name="firstName" class="fill1"
+                >FirstName*</label
+              >
+
+              <input
+                type="text"
+                name="lastname"
+                id="formName2"
+                class="lastname"
+                required
+              />
+
+              <label for="formName" name="lastName" class="fill2"
+                >lastName*</label
+              >
+            </div>
+
+            <div class="checkbox">
+              <input
+                class="col-1 "
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+              />
+              <p class="boxcheck" >I agree to Fyle's terms and conditions, and provide consent to
+                send me communication.</p>
+            </div>
+            <div class="buttonsubmit">
+              <button class="btn btn-danger submit">Contact Us</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="content">
+          <div class="content1-col">AWARD WINNING</div>
+
+          <h1>DIGITAL MARKETING AGENCY</h1>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              veniam perspiciatis totam doloribus temporibus, molestiae aut
+              laboriosam libero iste asperiores nam possimus eaque! Doloribus in
+              dolor autem accusamus, rem officiis.
+            </p>
+          </div>
+          <button class="btn btn-danger button">CONTACT US</button>
+        </div>
+
+        <div class="image">
+          <img
+            class="img"
+            src="https://digitalsparkagency.netlify.app/Assets/images/hero.png"
+            alt="digital marketing image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        let modal = $(".visible");
+        modal.hide();
+
+        $(".button").click(function (e) {
+          e.preventDefault();
+
+          modal.show();
+        });
+
+        $(".closebut").click(function (e) {
+          e.preventDefault();
+          modal.hide();
+        });
+      });
+    </script>
+  </body>
+</html>
